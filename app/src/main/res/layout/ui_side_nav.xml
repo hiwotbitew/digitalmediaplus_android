@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_person_pin_48"
+        />
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img_profile"
+        app:layout_constraintBottom_toTopOf="@id/img_profile"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/ic_baseline_menu_open_24"
+        />
+
+    <TextView
+        android:id="@+id/txv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiwot Bitew"
+        app:layout_constraintTop_toBottomOf="@id/img_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/naira"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txv_name"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tvCurrency"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        app:layout_constraintStart_toEndOf="@id/tvCurrency"
+        app:layout_constraintTop_toBottomOf="@id/txv_name"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/tvBalance"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        app:layout_constraintStart_toEndOf="@id/tvBalance"
+        app:layout_constraintTop_toBottomOf="@id/txv_name"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="5dp"
+        app:lottie_rawRes="@raw/add"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_300sdp"
+    app:layout_constraintTop_toBottomOf="@id/txv_name"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/txv_terms"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+    <TextView
+        android:id="@+id/txv_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_baseline_dashboard_24" />
+
+    <TextView
+        android:id="@+id/txv_sms_bulk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bulk SMS"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txv_dashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_baseline_sms_24" />
+
+    <TextView
+        android:id="@+id/txv_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voice SMS"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txv_sms_bulk"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_baseline_local_phone_24" />
+
+    <TextView
+        android:id="@+id/txv_voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digital Vouchers"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txv_voice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_baseline_payment_24" />
+
+    <TextView
+        android:id="@+id/txv_reseller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resellers"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_shopping_cart_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_voucher"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+
+    <TextView
+        android:id="@+id/txv_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cable TV Subs."
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_live_tv_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_reseller"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+
+    <TextView
+        android:id="@+id/txv_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Airtime/Data Recharge"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_swap_vert_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_sms"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_bills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bills"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_receipt_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_recharge"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_pin_purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WAEC Pin Purchase"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_bills"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_email_hosting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Hosting"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_pin_purchase"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_web_hosting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Hosting"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_email_hosting"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_long_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long Code"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_web_hosting"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_ussd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USSD"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_long_code"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+        <TextView
+            android:id="@+id/txv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            app:drawableStartCompat="@drawable/ic_baseline_local_phone_24"
+            app:layout_constraintTop_toBottomOf="@id/txv_ussd"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"/>
+    <TextView
+        android:id="@+id/txv_itunes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Itunes Cards"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center"
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:layout_constraintTop_toBottomOf="@id/txv_contact"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"/>
+        <TextView
+            android:id="@+id/txv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:drawablePadding="@dimen/_5sdp"
+            android:gravity="center"
+            app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24"
+            app:layout_constraintTop_toBottomOf="@id/txv_itunes"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+    <TextView
+        android:id="@+id/txv_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; Conditions  |  Privacy Policy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_12ssp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

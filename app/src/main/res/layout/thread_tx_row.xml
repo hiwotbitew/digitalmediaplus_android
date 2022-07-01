@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowHeader"
+    android:divider="@color/black"
+    android:gravity="center"
+    android:showDividers="middle">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="Type"
+            android:textSize="18sp"
+            android:id="@+id/tvType"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="Amount"
+            android:id="@+id/tvAmount"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="Date"
+            android:id="@+id/tvDate"
+            android:textSize="18sp" />
+</TableRow>

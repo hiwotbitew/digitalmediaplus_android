@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_baseline_dashboard_24"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@drawable/ic_baseline_sms_24"
+            android:title="Bulk SMS" />
+        <item
+            android:id="@+id/nav_voice"
+            android:icon="@drawable/ic_baseline_local_phone_24"
+            android:title="Voice SMS" />
+        <item
+            android:id="@+id/nav_voucher"
+            android:icon="@drawable/ic_baseline_payment_24"
+            android:title="Digital Vouchers" />
+        <item
+            android:id="@+id/nav_reseller"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Resellers" />
+        <item
+            android:id="@+id/nav_cable"
+            android:icon="@drawable/ic_baseline_live_tv_24"
+            android:title="Cable TV Subs" />
+        <item
+            android:id="@+id/nav_airtime"
+            android:icon="@drawable/ic_baseline_swap_vert_24"
+            android:title="Airtime/Data Recharge" />
+        <item
+            android:id="@+id/nav_electric"
+            android:icon="@drawable/ic_baseline_receipt_24"
+            android:title="Electricity Bills" />
+        <item
+            android:id="@+id/nav_pin"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="WAEC Pin Purchase" />
+        <item
+            android:id="@+id/nav_email_hosting"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="Email Hosting" />
+        <item
+            android:id="@+id/nav_web_hosting"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="Web Hosting" />
+        <item
+            android:id="@+id/nav_long"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="Long Code" />
+        <item
+            android:id="@+id/nav_ussd"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="USSD" />
+        <item
+            android:id="@+id/nav_itunes"
+            android:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:title="Itunes Cards" />
+    </group>
+    <group android:enabled="true" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_baseline_local_phone_24"
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_arrow_back_24"
+            android:title="Logout" />
+    </group>
+</menu>

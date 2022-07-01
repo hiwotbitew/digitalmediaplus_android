@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Digital Media Plus</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="naira">₦</string>
+    <array name="banks">
+        <item>ALAT By WEMA</item>
+        <item>Kuda Bank</item>
+        <item>Zenith Bank</item>
+    </array>
+    <array name="sms_type">
+        <item>--Select An Option--</item>
+        <item>text</item>
+        <item>flash</item>
+    </array>
+    <array name="spinSettings">
+        <item>--Do Nothing--</item>
+        <item>Remove Invalid Numbers</item>
+        <item>Remove Duplicate Numbers</item>
+        <item>Remove Duplicate &amp; Invalid Numbers</item>
+    </array>
+    <array name="spinContactChoice">
+        <item>--Select An Option--</item>
+        <item>Use a saved contact group</item>
+        <item>Enter numbers manually</item>
+        <item>Upload a CSV/txt file</item>
+    </array>
+    <array name="spinSchedule">
+        <item>--Select An Option--</item>
+        <item>Send Now</item>
+        <item>Send Later</item>
+    </array>
+    <array name="spinContactGroup">
+        <item>--Select Contact Group--</item>
+    </array>
+    <array name="spinSaveOptions">
+        <item>--Select Option--</item>
+        <item>Update Contact List</item>
+        <item>Create New Contact List</item>
+    </array>
+    <array name="spinSave">
+        <item>--Select Option--</item>
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sms_notice">
+Bulk SMS Pricing:
+
+
+
+kindly note we do not sell UNITS like you maybe used to.
+
+Ours is a currency based system.
+
+
+
+Money is deducted from your account for each SMS page sent.
+
+
+
+Each SMS page sent cost is N2.50
+
+
+
+We are not responsible for delivery of SMS. Delivery and termination of SMS to end user is the function of the mobile networks.
+
+Our system sends to the gateways which in turn passes them to the mobile networks for final termination to end user.
+
+
+
+Hence, we do not refund for SMS that was not delivered because the gateway already would charge us once your SMS is given passage to the mobile networks.
+
+
+
+</string>
+</resources>

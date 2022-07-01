@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/layoutGroups"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload File"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:background="@android:color/holo_red_light"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#fff"
+            />
+        <Button
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Select csv/txt File"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/btnBrowse"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutGroups"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/layoutNumbers"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Receivers"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:background="@android:color/holo_red_light"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:hint="Phone Number"
+            android:id="@+id/etReceivers"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            android:layout_gravity="center"
+            android:id="@+id/btnAdd"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipients"
+        android:background="@android:color/holo_red_light"
+        android:textColor="#fff"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutNumbers"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:id="@+id/tvSubTitle"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubTitle"
+        android:id="@+id/scrollview"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_20sdp"
+            >
+            <include layout="@layout/thread_contact_item"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollview"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/layoutSave"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save to Contacts?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:background="@android:color/holo_red_light"
+            android:padding="@dimen/_5sdp"
+            android:textColor="#fff"
+            />
+        <Spinner
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinSave"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/spinSaveOptions"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name of contact group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutSave"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:inputType="text"
+        android:id="@+id/etContactGroupName"
+        />
+    <Button
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#fff"
+        android:background="@drawable/button_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etContactGroupName"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

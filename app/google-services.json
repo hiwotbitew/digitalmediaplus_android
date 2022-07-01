@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "421890213327",
+    "firebase_url": "https://afrobeats.firebaseio.com",
+    "project_id": "afrobeats",
+    "storage_bucket": "afrobeats.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421890213327:android:0e30c87be84c9bbe353eba",
+        "android_client_info": {
+          "package_name": "com.hiwot.digitalmediaplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421890213327-rjqt3cusk2bnk6ntne4k4rlg61efbbao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCIi7c7l7UKqq_ubx91B5fjtOGnsrP-TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421890213327-71fte2easlfpuhn7v8rlkj5ctdfacfs4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421890213327:android:48f969e36a724950353eba",
+        "android_client_info": {
+          "package_name": "com.hiwot.obi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421890213327-sv8icghqhic3if3pnc1br9tq8ts5sv92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hiwot.obi",
+            "certificate_hash": "42269025fb7cd8f2d1da5b0b8ef2eef3741e78f5"
+          }
+        },
+        {
+          "client_id": "421890213327-rjqt3cusk2bnk6ntne4k4rlg61efbbao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCIi7c7l7UKqq_ubx91B5fjtOGnsrP-TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421890213327-71fte2easlfpuhn7v8rlkj5ctdfacfs4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421890213327:android:5f2265189dd01ee1353eba",
+        "android_client_info": {
+          "package_name": "com.lokdon.chatengine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421890213327-2ecibs1e41erigs5an3rumb3s1n5glg3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lokdon.chatengine",
+            "certificate_hash": "946e8ffde527e8f4240787bfd677c6fca2a02408"
+          }
+        },
+        {
+          "client_id": "421890213327-rjqt3cusk2bnk6ntne4k4rlg61efbbao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCIi7c7l7UKqq_ubx91B5fjtOGnsrP-TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421890213327-71fte2easlfpuhn7v8rlkj5ctdfacfs4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

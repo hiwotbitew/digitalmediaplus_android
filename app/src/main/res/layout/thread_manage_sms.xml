@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/top_line_bg"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1."
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/tvNo"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message content here"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tvMessage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fee: N1.00"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/tvFee"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: pending"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        app:layout_constraintTop_toBottomOf="@id/tvFee"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/tvStatus"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule: 20"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/tvSent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Failed: 20"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        app:layout_constraintTop_toBottomOf="@id/tvSent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/tvFailed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending: 20"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        app:layout_constraintTop_toBottomOf="@id/tvFailed"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/tvPending"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: 60"
+        app:layout_constraintStart_toEndOf="@id/tvNo"
+        app:layout_constraintTop_toBottomOf="@id/tvPending"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/tvTotal"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:id="@+id/btnDetails"
+            android:layout_marginEnd="@dimen/_20sdp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:id="@+id/btnDelete"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
